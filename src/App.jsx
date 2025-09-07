@@ -44,7 +44,7 @@ function App() {
       localStorage.setItem('jwt', data.token);
       localStorage.setItem('user', JSON.stringify(data.user));
       setIsAuthed(true);
-      navigate(`/dashboard`);
+      navigate(`/dashboard/faqs`);
     } catch (e) {
       console.error(e);
       alert('Login failed');
